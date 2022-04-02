@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+	<title>404 Not Found</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo" />
+	<style type="text/css">
+		.page_404{
+			padding:40px 0;
+			background:#fff;
+			font-family: 'Arvo', serif;
+		}
+
+		.page_404  img{ width:100%;}
+
+		.four_zero_four_bg{
+			background-image: url(assets/404.gif);
+			height: 400px;
+			background-position: center;
+		}
+
+		.four_zero_four_bg h1{
+			font-size:80px;
+		}
+
+		.four_zero_four_bg h3{
+			font-size:80px;
+		}
+
+		.link_404{
+			color: #fff!important;
+			padding: 10px 20px;
+			background: #39ac31;
+			margin: 20px 0;
+			display: inline-block;
+		}
+
+		.contant_box_404{
+			margin-top:-50px;
+		}
+	</style>
+</head>
+<body oncontextmenu="return false">
+	<section class="page_404 ml-auto mr-auto">
+		<div class="container ml-auto mr-auto">
+			<div class="row ml-auto mr-auto">
+				<div class="col-sm-12  ml-auto mr-auto">
+					<div class="col-sm-10 col-sm-offset-1  text-center">
+						<div class="four_zero_four_bg">
+							<h1 class="text-center ">404</h1>
+						</div>
+						<div class="contant_box_404 text-center">
+							<h3 class="h2 text-center">
+								Looks like you're lost
+							</h3>
+							<p class="text-center">the page you are looking is not available!</p>
+							<a href="/" class="link_404 text-center">Go to Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- <script  src="./script.js"></script> -->
+	<script>
+		window.history.pushState(null, null, "404")
+		function disableF5(e) {
+			if ((e.which || e.keyCode) == 116 || ((e.ctrlKey || e.metaKey) && (e.which || e.keyCode) == 82) || (window.event.ctrlKey && e.keyCode == 82)) {
+				fetchPage(originalURL);
+				e.preventDefault();
+			}
+		}
+
+		function fetchPage(originalURL) {
+			jQuery.get( originalURL, function( data ) {
+				jQuery( "body" ).html( data );
+			});
+		}
+	</script>
+</body>
+</html>
