@@ -1,1 +1,1 @@
-<?php header("Location: http://pavel.dimov.xyz/"); ?>
+<?php header("Location: https://pavel.dimov.xyz/"); ?>
