@@ -1,1 +1,1 @@
-# pavel.dimov.xyz
+# pavel.dimov.xyz [![Release](https://img.shields.io/badge/dynamic/json.svg?label=release&url=https://code.dimov.xyz/api/v1/repos/pavel/pavel.dimov.xyz/releases&query=$[0].tag_name)](https://code.dimov.xyz/pavel/pavel.dimov.xyz/releases) [![Support room on Matrix](https://img.shields.io/matrix/help:dimov.xyz.svg?label=%23help%3Adimov.xyz&logo=matrix&server_fqdn=matrix.dimov.xyz)](https://matrix.to/#/#help:dimov.xyz)
